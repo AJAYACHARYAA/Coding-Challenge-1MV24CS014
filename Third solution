@@ -1,0 +1,16 @@
+let inputStr = prompt("Enter a string");
+inputStr = inputStr.toLowerCase();
+let vowels = "aeiou";
+let vowelCount = 0;
+let consonantCount = 0;
+for (let i = 0; i < inputStr.length; i++) {
+  let char = inputStr[i];
+  if (vowels.includes(char)) {
+    vowelCount++;
+  }
+  else if (char >= 'a' && char <= 'z') {
+    consonantCount++;
+  }
+}
+console.log("Vowels: " + vowelCount);
+console.log("Consonants: " + consonantCount);
